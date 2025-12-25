@@ -59,9 +59,9 @@ export default function About() {
                 impactful solutions.
               </p>
               <p>
-                With experience in Clean Architecture and SOLID principles, I&apos;m
-                committed to helping users and businesses grow in the digital
-                era through functional, aesthetic, and scalable digital
+                With experience in Clean Architecture and SOLID principles,
+                I&apos;m committed to helping users and businesses grow in the
+                digital era through functional, aesthetic, and scalable digital
                 products.
               </p>
             </motion.div>
