@@ -45,7 +45,7 @@ export default function Hero() {
           className='mb-6'
         >
           <h1 className='text-4xl md:text-7xl font-bold bg-gradient-to-br from-slate-300 to-slate-500 bg-clip-text text-transparent'>
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <EncryptedText
               text='Nanthavy Phommathep'
               className='bg-gradient-to-br from-cyan-400 to-purple-600 bg-clip-text text-transparent'
