@@ -5,7 +5,7 @@ import Snowfall from "react-snowfall";
 export default function SnowfallEffect() {
   return (
     <Snowfall
-      color="#fff"
+      color='#fff'
       snowflakeCount={200}
       style={{
         position: "fixed",
