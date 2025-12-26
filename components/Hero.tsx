@@ -1,11 +1,7 @@
 "use client";
 
 import { EncryptedText } from "./ui/encrypted-text";
-import { HoverBorderGradient } from "./ui/hover-border-gradient";
 import { motion } from "framer-motion";
-import { SparklesCore } from "./ui/sparkles";
-import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
-import { User, Mail } from "lucide-react";
 import { ThreeDCardDemo } from "./test";
 
 export default function Hero() {
