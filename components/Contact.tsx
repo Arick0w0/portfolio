@@ -77,15 +77,15 @@ export default function Contact() {
           >
             GitHub
           </HoverBorderGradient>
-          {/* <HoverBorderGradient
+          <HoverBorderGradient
             as='a'
-            href='https://linkedin.com/in/yourusername'
+            href='https://www.facebook.com/nunthavi.phommatheb'
             target='_blank'
             rel='noopener noreferrer'
             className='px-8 py-3 text-white font-medium'
           >
-            LinkedIn
-          </HoverBorderGradient> */}
+            Facebook
+          </HoverBorderGradient>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
