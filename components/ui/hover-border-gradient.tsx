@@ -57,7 +57,7 @@ export const HoverBorderGradient = ({
           ease: "linear",
         }}
       >
-        <div className="bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] w-full h-full" />
+        <div className='bg-[conic-gradient(from_0deg,transparent_0_340deg,white_360deg)] w-full h-full' />
       </motion.div>
     </Tag>
   );

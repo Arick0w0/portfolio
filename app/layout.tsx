@@ -14,7 +14,8 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Rick - Mobile App Developer",
-  description: "Mobile Application Developer specializing in Flutter with Clean Architecture, BLoC, and modern app development practices",
+  description:
+    "Mobile Application Developer specializing in Flutter with Clean Architecture, BLoC, and modern app development practices",
 };
 
 export default function RootLayout({
@@ -23,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang='en'>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

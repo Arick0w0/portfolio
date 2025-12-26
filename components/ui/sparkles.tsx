@@ -54,7 +54,8 @@ export const SparklesCore = (props: SparklesProps) => {
       const newParticles = Array.from({ length: particleCount }, () => ({
         x: Math.random() * dimensions.width,
         y: Math.random() * dimensions.height,
-        size: Math.random() * ((maxSize || 3) - (minSize || 1)) + (minSize || 1),
+        size:
+          Math.random() * ((maxSize || 3) - (minSize || 1)) + (minSize || 1),
         speedX: (Math.random() - 0.5) * 0.5,
         speedY: (Math.random() - 0.5) * 0.5,
         opacity: Math.random(),
@@ -68,14 +69,21 @@ export const SparklesCore = (props: SparklesProps) => {
         newParticles.forEach((particle) => {
           particle.x += particle.speedX;
           particle.y += particle.speedY;
-          particle.opacity = Math.sin(Date.now() * 0.001 + particle.x) * 0.5 + 0.5;
+          particle.opacity =
+            Math.sin(Date.now() * 0.001 + particle.x) * 0.5 + 0.5;
 
-          if (particle.x < 0 || particle.x > dimensions.width) particle.speedX *= -1;
-          if (particle.y < 0 || particle.y > dimensions.height) particle.speedY *= -1;
+          if (particle.x < 0 || particle.x > dimensions.width)
+            particle.speedX *= -1;
+          if (particle.y < 0 || particle.y > dimensions.height)
+            particle.speedY *= -1;
 
           ctx.beginPath();
           ctx.arc(particle.x, particle.y, particle.size, 0, Math.PI * 2);
-          ctx.fillStyle = `${particleColor || "#ffffff"}${Math.floor(particle.opacity * 255).toString(16).padStart(2, '0')}`;
+          ctx.fillStyle = `${particleColor || "#ffffff"}${Math.floor(
+            particle.opacity * 255
+          )
+            .toString(16)
+            .padStart(2, "0")}`;
           ctx.fill();
         });
         animationFrameId = requestAnimationFrame(animate);

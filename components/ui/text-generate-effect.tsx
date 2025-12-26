@@ -10,8 +10,8 @@ export const TextGenerateEffect = ({
 }) => {
   return (
     <div className={cn("font-bold", className)}>
-      <div className="text-white">
-        <div className="text-4xl md:text-7xl">{words}</div>
+      <div className='text-white'>
+        <div className='text-4xl md:text-7xl'>{words}</div>
       </div>
     </div>
   );

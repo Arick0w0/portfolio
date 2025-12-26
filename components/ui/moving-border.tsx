@@ -1,6 +1,12 @@
 "use client";
 import React, { useRef } from "react";
-import { motion, useAnimationFrame, useMotionTemplate, useMotionValue, useTransform } from "framer-motion";
+import {
+  motion,
+  useAnimationFrame,
+  useMotionTemplate,
+  useMotionValue,
+  useTransform,
+} from "framer-motion";
 import { cn } from "@/lib/utils";
 
 export function MovingBorder({
@@ -28,14 +34,12 @@ export function MovingBorder({
       )}
       {...otherProps}
     >
-      <div className="absolute inset-0">
+      <div className='absolute inset-0'>
         <motion.div
-          className={cn(
-            "absolute inset-0 rounded-lg",
-            borderClassName
-          )}
+          className={cn("absolute inset-0 rounded-lg", borderClassName)}
           style={{
-            background: "linear-gradient(90deg, #a855f7, #3b82f6, #06b6d4, #10b981, #a855f7)",
+            background:
+              "linear-gradient(90deg, #a855f7, #3b82f6, #06b6d4, #10b981, #a855f7)",
             backgroundSize: "400% 400%",
           }}
           animate={{
