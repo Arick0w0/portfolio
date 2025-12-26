@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { cn } from "@/lib/utils";
+import Tag3d from "./testcard";
 
 export default function About() {
   return (
@@ -86,60 +87,13 @@ export default function About() {
               </div>
             </motion.div>
           </div>
+          <Tag3d />
 
           {/* Right Column: ID Card */}
-          <div className='flex justify-center lg:justify-end relative'>
-            {/* Lanyard String */}
-            <motion.div
-              initial={{ height: 0 }}
-              whileInView={{ height: 200 }}
-              transition={{ duration: 1, delay: 0.5 }}
-              className='absolute top-[-200px] left-1/2 w-1 bg-zinc-800 z-0'
-            />
-
-            <motion.div
-              initial={{ y: -100, opacity: 0, rotate: -5 }}
-              whileInView={{ y: 0, opacity: 1, rotate: 0 }}
-              transition={{
-                type: "spring",
-                stiffness: 100,
-                damping: 15,
-                delay: 0.8,
-              }}
-              whileHover={{ rotate: 2, scale: 1.02 }}
-              className='relative z-10 bg-[#0a0a0a] border border-zinc-800 p-6 rounded-2xl w-72 shadow-2xl shadow-purple-500/10 transform rotate-3'
-            >
-              {/* Card Hole */}
-              <div className='absolute -top-3 left-1/2 -translate-x-1/2 w-12 h-3 bg-zinc-800 rounded-full' />
-
-              <div className='flex flex-col items-center text-center mt-4'>
-                <div className='w-32 h-32 bg-zinc-800 rounded-xl mb-4 overflow-hidden relative'>
-                  {/* Placeholder for Profile Image */}
-                  <div className='absolute inset-0 flex items-center justify-center text-4xl'>
-                    👨‍💻
-                  </div>
-                </div>
-                <h3 className='text-xl font-bold text-white'>Nanthavy P.</h3>
-                <p className='text-purple-400 text-sm font-medium mb-6'>
-                  Mobile Developer
-                </p>
-
-                <div className='w-full h-12 bg-white rounded-lg flex items-center justify-center'>
-                  {/* Barcode simulation */}
-                  <div className='flex gap-1 h-8 items-center px-4 w-full justify-between'>
-                    {[...Array(15)].map((_, i) => (
-                      <div
-                        key={i}
-                        className='bg-black w-1 h-full'
-                        style={{ opacity: Math.random() > 0.5 ? 1 : 0.3 }}
-                      />
-                    ))}
-                  </div>
-                </div>
-                <p className='text-xs text-gray-600 mt-2'>ID: 88392019</p>
-              </div>
-            </motion.div>
-          </div>
+          {/* Lanyard String */}
+          {/* <div>
+            <Tag3d />
+          </div> */}
         </div>
       </div>
     </section>

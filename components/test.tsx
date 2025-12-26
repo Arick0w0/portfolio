@@ -1,53 +1,41 @@
 "use client";
 
 import React from "react";
-import { CardBody, CardContainer, CardItem } from "@/components/ui/3d-card";
+import Image from "next/image";
+import { EvervaultCard, Icon } from "./ui/evervault-card";
 
 export function ThreeDCardDemo() {
   return (
-    <CardContainer className='inter-var'>
-      <CardBody className='bg-gray-50 relative group/card  dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[30rem] h-auto rounded-xl p-6 border  '>
-        <CardItem
-          translateZ='50'
-          className='text-xl font-bold text-neutral-600 dark:text-white'
-        >
-          Make things float in air
-        </CardItem>
-        <CardItem
-          as='p'
-          translateZ='60'
-          className='text-neutral-500 text-sm max-w-sm mt-2 dark:text-neutral-300'
-        >
-          Hover over this card to unleash the power of CSS perspective
-        </CardItem>
-        <CardItem translateZ='100' className='w-full mt-4'>
-          <img
-            src='images/image.jpg'
-            height='1000'
-            width='1000'
-            className='h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl'
-            alt='thumbnail'
-          />
-        </CardItem>
-        <div className='flex justify-between items-center mt-20'>
-          <CardItem
-            translateZ={20}
-            as='a'
-            href='https://twitter.com/mannupaaji'
-            target='__blank'
-            className='px-4 py-2 rounded-xl text-xs font-normal dark:text-white'
-          >
-            Try now →
-          </CardItem>
-          <CardItem
-            translateZ={20}
-            as='button'
-            className='px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold'
-          >
-            Sign up
-          </CardItem>
-        </div>
-      </CardBody>
-    </CardContainer>
+    <div className='border border-white/[0.1] flex flex-col items-start max-w-sm mx-auto p-6 relative h-[30rem] rounded-3xl bg-zinc-900/50 backdrop-blur-sm'>
+      <Icon className='absolute h-6 w-6 -top-3 -left-3 text-white' />
+      <Icon className='absolute h-6 w-6 -bottom-3 -left-3 text-white' />
+      <Icon className='absolute h-6 w-6 -top-3 -right-3 text-white' />
+      <Icon className='absolute h-6 w-6 -bottom-3 -right-3 text-white' />
+      <div className='relative w-full h-48 rounded-2xl overflow-hidden mb-4'>
+        <Image
+          src='/images/image.jpg'
+          alt='Profile'
+          fill
+          className='object-cover'
+        />
+      </div>
+
+      <EvervaultCard>
+        <Image
+          src='/images/image.jpg'
+          alt='Profile'
+          fill
+          className='object-cover rounded-full'
+        />
+      </EvervaultCard>
+
+      <h2 className='text-white mt-4 text-sm font-light'>
+        Passionate Mobile Developer crafting seamless cross-platform experiences
+        with Flutter. Focused on clean architecture and scalable solutions.
+      </h2>
+      <p className='text-sm border font-light border-white/[0.2] rounded-full mt-4 text-white px-2 py-0.5'>
+        Flutter & Dart Specialist
+      </p>
+    </div>
   );
 }

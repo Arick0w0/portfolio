@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.2",
     "@react-three/drei": "^10.7.7",
     "@react-three/fiber": "^9.4.2",
     "@react-three/rapier": "^2.2.0",
@@ -16,6 +17,7 @@
     "clsx": "^2.1.1",
     "file-loader": "^6.2.0",
     "framer-motion": "^11.15.0",
+    "gsap": "^3.14.2",
     "lucide-react": "^0.562.0",
     "meshline": "^3.3.1",
     "motion": "^12.23.26",
@@ -25,7 +27,7 @@
     "react-snowfall": "^2.4.0",
     "tailwind-merge": "^2.6.0",
     "tailwindcss-animate": "^1.0.7",
-    "three": "^0.182.0"
+    "three": "^0.167.1"
   },
   "devDependencies": {
     "@types/node": "^22",
