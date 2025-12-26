@@ -24,7 +24,7 @@ import { useControls } from "leva";
 extend({ MeshLineGeometry, MeshLineMaterial });
 
 // Preload models and textures
-const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
+const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
 useGLTF.preload(`${basePath}/lailaolab-tag.glb`, false, false);
 
 useTexture.preload(`${basePath}/lailaolab-clamp.png`);
@@ -95,8 +95,8 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   };
 
   // Load models and textures
-	const basePath = process.env.NODE_ENV === 'production' ? '/portfolio' : '';
-	const { nodes, materials } = useGLTF(`${basePath}/lailaolab-tag.glb`);
+  const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+  const { nodes, materials } = useGLTF(`${basePath}/lailaolab-tag.glb`);
   for (const node of Object.values(nodes)) {
     if (node instanceof THREE.Mesh) {
       console.log(node.geometry, node.material);
