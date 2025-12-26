@@ -21,7 +21,7 @@ export const EncryptedText = ({
 
   useEffect(() => {
     let iteration = 0;
-    
+
     const intervalId = setInterval(() => {
       setDisplayText((prev) =>
         text
