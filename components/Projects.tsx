@@ -117,7 +117,7 @@ export default function Projects() {
                   <div className='absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent z-10' />
                   <Image
                     src={`${
-                      process.env.NODE_ENV === "production" ? "/portfolio" : ""
+                    process.env.NODE_ENV === "production" ? "/portfolio_1" : ""
                     }/images/${project.image}`}
                     alt={project.title}
                     fill

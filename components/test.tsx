@@ -14,7 +14,7 @@ export function ThreeDCardDemo() {
       <div className='relative w-full h-48 rounded-2xl overflow-hidden mb-4'>
         <Image
           src={`${
-            process.env.NODE_ENV === "production" ? "/portfolio" : ""
+            process.env.NODE_ENV === "production" ? "/portfolio_1" : ""
           }/images/image.jpg`}
           alt='Profile'
           fill
@@ -25,7 +25,7 @@ export function ThreeDCardDemo() {
       <EvervaultCard>
         <Image
           src={`${
-            process.env.NODE_ENV === "production" ? "/portfolio" : ""
+            process.env.NODE_ENV === "production" ? "/portfolio_1" : ""
           }/images/image.jpg`}
           alt='Profile'
           fill

@@ -95,7 +95,7 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   };
 
   // Load models and textures
-  const basePath = process.env.NODE_ENV === "production" ? "/portfolio" : "";
+  const basePath = process.env.NODE_ENV === "production" ? "/portfolio_1" : "";
   const { nodes, materials } = useGLTF(`${basePath}/lailaolab-tag.glb`);
   for (const node of Object.values(nodes)) {
     if (node instanceof THREE.Mesh) {
