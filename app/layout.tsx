@@ -16,6 +16,12 @@ export const metadata: Metadata = {
   title: "Rick - Mobile App Developer",
   description:
     "Mobile Application Developer specializing in Flutter with Clean Architecture, BLoC, and modern app development practices",
+  icons: {
+    icon: [
+      { url: '/favicon.ico' },
+      { url: '/icon.png', type: 'image/png', sizes: '32x32' },
+    ],
+  },
 };
 
 export default function RootLayout({
