@@ -101,6 +101,7 @@ export default function Hero() {
                 <CardItem
                   translateZ='50'
                   className='text-2xl font-bold text-white'
+                  
                 >
                   Nanthavy P.
                 </CardItem>
