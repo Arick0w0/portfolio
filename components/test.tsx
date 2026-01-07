@@ -34,7 +34,7 @@ export function ThreeDCardDemo() {
         with Flutter. Focused on clean architecture and scalable solutions.
       </h2>
       <p className='text-sm border font-light border-white/[0.2] rounded-full mt-4 text-white px-2 py-0.5'>
-        Flutter & Dart Specialist
+        Flutter & Dart Specialist.
       </p>
     </div>
   );
