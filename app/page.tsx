@@ -1,5 +1,5 @@
 import Hero from "@/components/Hero";
-import About from "@/components/About";
+// import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -11,7 +11,7 @@ export default function Home() {
     <main className='min-h-screen bg-black antialiased'>
       {/* <SnowfallEffect /> */}
       <Hero />
-      <About />
+      {/* <About /> */}
       <Skills />
       <Experience />
       <Projects />
