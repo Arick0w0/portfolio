@@ -121,7 +121,7 @@ export default function About() {
           {/* rigth */}
           <div className='lg:absolute w-full h-full z-20  order-1 md:order-2'>
             {/* 2. 3D Tag - Tall Card */}
-          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[500px] md:min-h-0 rounded-3xl  border border-zinc-800 overflow-hidden'>
+          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[500px] md:min-h-0 rounded-3xl   overflow-hidden'>
             <div className='absolute inset-0 flex justify-left items-center w-full h-full'>
               <Tag3d />
             </div>
