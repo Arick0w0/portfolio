@@ -34,9 +34,9 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className=' grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[minmax(180px,auto)]'>
+        <div className='lg:relative grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[minmax(180px,auto)]'>
           {/* lift */}
-          <div className='order-2 md:order-1 grid grid-cols-1 md:grid-cols-4 md:grid-rows-6 gap-6'>
+          <div className='order-2  md:order-1  grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2'>
              <div className='md:col-span-4 md:row-span-2'>
             <BackgroundGradient className='rounded-[22px] h-full p-8 bg-zinc-900 overflow-hidden'>
               <h3 className='text-2xl font-bold text-white mb-4'>Who am I?</h3>
@@ -119,10 +119,10 @@ export default function About() {
           </div>
           </div>
           {/* rigth */}
-          <div className='order-1 md:order-2'>
+          <div className='lg:absolute w-full h-full z-20  order-1 md:order-2'>
             {/* 2. 3D Tag - Tall Card */}
-          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[500px] md:min-h-0 rounded-3xl bg-zinc-900/50 border border-zinc-800 overflow-hidden'>
-            <div className='absolute inset-0 w-full h-full'>
+          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[500px] md:min-h-0 rounded-3xl   overflow-hidden'>
+            <div className='absolute inset-0 flex justify-left items-center w-full h-full'>
               <Tag3d />
             </div>
             <div className='absolute bottom-4 left-0 right-0 text-center pointer-events-none'>
