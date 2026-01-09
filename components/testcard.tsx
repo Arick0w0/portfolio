@@ -126,9 +126,9 @@ function Band({ maxSpeed = 50, minSpeed = 10 }) {
   const isLargeScreen = size.width >= 1024;
   
   const groupPosition = isLargeScreen ? [3, 6, 0] : [0, 5, 0];
-  const j1Position = isLargeScreen ? [3.5, -6, 0] : [1, -6, 0];
-  const j2Position = isLargeScreen ? [4, -6, 0] : [1.5, -6, 0];
-  const j3Position = isLargeScreen ? [4.5, -6, 0] : [2, -6, 0];
+  const j1Position = isLargeScreen ? [3.5, -6, 0] : [0.5, -6, 0];
+  const j2Position = isLargeScreen ? [4, -6, 0] : [1, -6, 0];
+  const j3Position = isLargeScreen ? [4.5, -6, 0] : [1.5, -6, 0];
   
   const [curve] = useState(
     () =>
