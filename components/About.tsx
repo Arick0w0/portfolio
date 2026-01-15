@@ -17,7 +17,7 @@ export default function About() {
   return (
     <section
       id='about'
-      className='relative py-20 min-h-screen flex items-center justify-center bg-black overflow-hidden'
+      className='relative pt-20 min-h-screen flex items-center justify-center bg-black overflow-hidden'
     >
       <div className='max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10'>
         <motion.div
@@ -34,9 +34,9 @@ export default function About() {
           </p>
         </motion.div>
 
-        <div className='lg:relative grid grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[minmax(180px,auto)]'>
+        <div className='lg:relative grid   grid-cols-1 md:grid-cols-2 gap-6 auto-rows-[minmax(180px,auto)]'>
           {/* lift */}
-          <div className='order-2  md:order-1  grid grid-cols-1 md:grid-cols-4 md:grid-rows-4 gap-2'>
+          <div className='order-2  md:order-1  grid grid-cols-1 md:grid-cols-3 md:grid-rows-3 gap-2'>
              <div className='md:col-span-4 md:row-span-2'>
             <BackgroundGradient className='rounded-[22px] h-full p-8 bg-zinc-900 overflow-hidden'>
               <h3 className='text-2xl font-bold text-white mb-4'>Who am I?</h3>
@@ -66,9 +66,6 @@ export default function About() {
               </div>
             </BackgroundGradient>
           </div>
-
-          
-
           {/* 3. Stats - Small Cards */}
           <div className='flex md:col-span-4 py-6 justify-between gap-6 mt-6 md:mt-0 grid grid-cols-2 md:grid-cols-4'>
             <motion.div
@@ -94,52 +91,18 @@ export default function About() {
           </motion.div>
           </div>
 
-          {/* 4. Tech Stack - Wide Card */}
-          <div className='md:col-span-4 bg-zinc-900 rounded-3xl p-8 border border-zinc-800'>
-            <h3 className='text-xl font-bold text-white mb-6 flex items-center gap-2'>
-              <Zap className='w-5 h-5 text-yellow-400' />
-              Tech Stack & Tools
-            </h3>
-            <div className='grid grid-cols-2 md:grid-cols-4 gap-4'>
-              {[
-                { name: "Flutter", icon: Smartphone },
-                { name: "Dart", icon: Terminal },
-                { name: "Firebase", icon: Database },
-                { name: "Figma", icon: Layout },
-              ].map((tech, idx) => (
-                <div
-                  key={idx}
-                  className='flex items-center gap-3 p-3 rounded-xl bg-zinc-800/50 border border-zinc-700/50'
-                >
-                  <tech.icon className='w-5 h-5 text-gray-400' />
-                  <span className='text-gray-200 font-medium'>{tech.name}</span>
-                </div>
-              ))}
-            </div>
-          </div>
           </div>
           {/* rigth */}
           <div className='lg:absolute w-full h-full z-20  order-1 md:order-2'>
             {/* 2. 3D Tag - Tall Card */}
-          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[500px] md:min-h-0 rounded-3xl   overflow-hidden'>
+          <div className='md:col-span-2 md:row-span-3 relative lg:h-full min-h-[400px] md:min-h-0 rounded-3xl   overflow-hidden'>
             <div className='absolute inset-0 flex justify-left items-center w-full h-full'>
               <Tag3d />
             </div>
            
           </div>
           </div>
-          {/* 1. Main Bio - Large Card */}
          
-
-          {/* 5. Quote - Full Width Bottom */}
-          {/* <div className='order-3 md:col-span-6 bg-gradient-to-r from-indigo-900/50 to-purple-900/50 rounded-3xl p-8 border border-indigo-500/20 flex items-center justify-center text-center'>
-            <div>
-              <p className='text-xl md:text-2xl font-medium text-white italic mb-2'>
-                &quot;Working with heart, creating with mind.&quot;
-              </p>
-              <p className='text-indigo-300 text-sm'>- My Philosophy</p>
-            </div>
-          </div> */}
         </div>
       </div>
     </section>
