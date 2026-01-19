@@ -1,6 +1,6 @@
 "use client";
 import { useMotionValue } from "motion/react";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { useMotionTemplate, motion } from "motion/react";
 import { cn } from "@/lib/utils";
 
@@ -17,14 +17,23 @@ export const EvervaultCard = ({
   let mouseY = useMotionValue(0);
 
   const [randomString, setRandomString] = useState("");
+  const rectRef = useRef<DOMRect | null>(null);
 
   useEffect(() => {
     let str = generateRandomString(1500);
     setRandomString(str);
   }, []);
 
+  const onMouseEnter = (e: React.MouseEvent<HTMLDivElement>) => {
+    rectRef.current = e.currentTarget.getBoundingClientRect();
+  };
+
   function onMouseMove({ currentTarget, clientX, clientY }: any) {
-    let { left, top } = currentTarget.getBoundingClientRect();
+    if (!rectRef.current) {
+      rectRef.current = currentTarget.getBoundingClientRect();
+    }
+    let { left, top } = rectRef.current;
+    
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
@@ -41,6 +50,7 @@ export const EvervaultCard = ({
     >
       <div
         onMouseMove={onMouseMove}
+        onMouseEnter={onMouseEnter}
         className='group/card rounded-3xl w-full relative overflow-hidden bg-transparent flex items-center justify-center h-full'
       >
         <CardPattern

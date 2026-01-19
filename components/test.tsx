@@ -25,6 +25,7 @@ export function ThreeDCardDemo() {
           src='/images/image.jpg'
           alt='Profile'
           fill
+          priority
           className='object-cover rounded-full'
         />
       </EvervaultCard>
