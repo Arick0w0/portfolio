@@ -33,7 +33,7 @@ export const EvervaultCard = ({
       rectRef.current = currentTarget.getBoundingClientRect();
     }
     let { left, top } = rectRef.current as DOMRect;
-    
+
     mouseX.set(clientX - left);
     mouseY.set(clientY - top);
 
@@ -45,7 +45,7 @@ export const EvervaultCard = ({
     <div
       className={cn(
         "p-0.5  bg-transparent aspect-square  flex items-center justify-center w-full h-full relative",
-        className
+        className,
       )}
     >
       <div
